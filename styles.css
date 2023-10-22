@@ -702,6 +702,7 @@ nav a:hover {
 
 .process-step p {
 	font-family: var(--body-text);
+	font-size: 17px;
 	color: var(--color4);
 	line-height: 19px;
 	margin-bottom: 15px;
@@ -784,6 +785,10 @@ nav a:hover {
 /* responsive styles (WIDESCREEN) */
 
 @media screen and (min-width: 800px) {
+
+	.process-step p {
+		font-size: 19px;
+	}
 
 	.img-gallery {
 		display: grid;
