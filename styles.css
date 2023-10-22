@@ -206,6 +206,7 @@ nav {
 	transform-origin: top;
 	transition: transform 250ms ease-in-out 250ms;
 	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 100;
 }
 
 nav ul {
@@ -275,6 +276,7 @@ nav a:hover {
 	justify-content: center;
 	align-items: center;
 	padding-top: 100px;
+	z-index: -1;
 }
 
 .intro h1 {
@@ -515,7 +517,7 @@ nav a:hover {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .project-image {
@@ -676,70 +678,108 @@ nav a:hover {
 	max-width: 40px;
 }
 
-	/* graphic design page styling */
+/* capsule kids page styling */
 
-	.gallery-title {
-		padding-top: 100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 20px;
-	}
+#process-subtitle {
+	font-size: 24px;
+}
 
-	.gallery-title h1 {
-		color: var(--color1);
-		font-family: big pixel demo;
-		margin-left: 0;
-		font-size: 36px;
-		letter-spacing: 1px;
-		font-weight: 100;
-		text-align: center;
-		line-height: 33px;
-	}
+.process-step{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 800px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
 
-	.gallery-title p {
-		text-align: center;
-		color: var(--color4);
-		font-family: var(--body-text);
-		font-size: 18px;
-		line-height: 22px;
-		max-width: 600px;
-		margin-top: 12px;
 
-	}
+.process-step h1 {
+	font-family: big pixel demo;
+	font-weight: 100;
+	color: var(--color1);
+	margin-bottom: 5px;
+}
 
-	.img-gallery {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(3, auto);
-		margin-bottom: 50px;
-	}
+.process-step p {
+	font-family: var(--body-text);
+	color: var(--color4);
+	line-height: 19px;
+	margin-bottom: 15px;
+}
 
-	.img-card {
-		margin: 10px;
-		font-family: 'Courier New', Courier, monospace;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		border: solid blue;
-		/* border-radius: 10px; */
-		border: solid lightgray 2px;
-		padding: 10px;
-	}
+.process-step img {
+	width: 100%;
+}
 
-	.img-card h2 {
-		color: var(--color4);
-		font-family: var(--body-text);
-		font-size: 18px;
-		line-height: 22px;
-		width: 75%;
-		text-align: center;
-	}
+#plyr-video {
+	width: 100%;
+	max-width: 800px;
+}
 
-	.img-card img {
-		width: 100%;
-	}
+/* graphic design page styling */
+
+.gallery-title {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.gallery-title h1 {
+	color: var(--color1);
+	font-family: big pixel demo;
+	margin-left: 0;
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-align: center;
+	line-height: 33px;
+}
+
+.gallery-title p {
+	text-align: center;
+	color: var(--color4);
+	font-family: var(--body-text);
+	font-size: 18px;
+	line-height: 22px;
+	max-width: 600px;
+	margin-top: 12px;
+
+}
+
+.img-gallery {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	margin-bottom: 50px;
+}
+
+.img-card {
+	margin: 10px;
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid blue;
+	/* border-radius: 10px; */
+	border: solid lightgray 2px;
+	padding: 10px;
+}
+
+.img-card h2 {
+	color: var(--color4);
+	font-family: var(--body-text);
+	font-size: 18px;
+	line-height: 22px;
+	width: 75%;
+	text-align: center;
+}
+
+.img-card img {
+	width: 100%;
+}
 
 /* responsive styles (WIDESCREEN) */
 
@@ -764,6 +804,7 @@ nav a:hover {
 		width: 100%;
 		height: 64px;
 		background-color: rgba#fff;
+		z-index: 2;
 	}
 
 	header {
@@ -774,7 +815,6 @@ nav a:hover {
 		left: 50%;
 		transform: translateX(-50%);
 	}
-
 
 	nav {
 		all: unset;
@@ -863,6 +903,7 @@ nav a:hover {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		
 	}
 
 	.project-description-dt {
@@ -972,6 +1013,7 @@ nav a:hover {
 		height: 100vh;
 		position: relative;
 		z-index: 9999;
+		z-index: -1;
 	}
 
 	.intro-dt-text {
