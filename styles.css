@@ -717,6 +717,16 @@ nav a:hover {
 	max-width: 800px;
 }
 
+.vid {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.gallery-title p a {
+	color: var(--color1);
+	text-decoration: none;
+}
+
 /* graphic design page styling */
 
 .gallery-title {
