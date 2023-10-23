@@ -684,7 +684,7 @@ nav a:hover {
 	font-size: 24px;
 }
 
-.process-step{
+.process-step {
 	width: 100%;
 	margin: 0 auto;
 	max-width: 800px;
@@ -918,7 +918,7 @@ nav a:hover {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		
+
 	}
 
 	.project-description-dt {
